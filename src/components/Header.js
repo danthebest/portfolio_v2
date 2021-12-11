@@ -1,12 +1,15 @@
 import * as React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Header = () => {
   return (
     <div className="mt-20 text-white">
-      <div className="grid grid-cols-2 gap-4">
-        <div className="ml-48">
-          <div className="bg-teal-500 rounded-tl-full rounded-tr-full rounded-br-full py-2 w-36">
-            <p className="text-center font-medium text-lg">Hello, I'm</p>
+      <div className="grid grid-cols-2">
+        <div className="ml-56">
+          <div className="bg-yellow-400 rounded-tl-full rounded-tr-full rounded-br-full py-2 w-36">
+            <p className="text-center text-black font-medium text-lg">
+              Hello, I'm
+            </p>
           </div>
           <h1 className="mt-16 text-5xl font-semibold">Daniel Tossou</h1>
           <p className="text-xl font-medium uppercase mt-3">Product Designer</p>
@@ -14,7 +17,7 @@ const Header = () => {
           <div className="mt-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-map-pin inline-block"
+              className="icon icon-tabler icon-tabler-map-pin inline-block text-yellow-400"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -73,7 +76,7 @@ const Header = () => {
           {/* SOCIAL MEDIA SECTION */}
           <div className="mt-8 space-x-4">
             {/* Github */}
-            <div className="hover:border-b-white hover:border-b-4 hover:pb-1 inline-block hover:cursor-pointer">
+            <div className="hover:border-b-yellow-400 hover:border-b-4 hover:pb-1 hover:text-yellow-400 inline-block hover:cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-brand-github inline-block"
@@ -92,7 +95,7 @@ const Header = () => {
             </div>
 
             {/* Dribbble */}
-            <div className="hover:border-b-white hover:border-b-4 hover:pb-1 inline-block hover:cursor-pointer">
+            <div className="hover:border-b-yellow-400 hover:text-yellow-400  hover:border-b-4 hover:pb-1 inline-block hover:cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-brand-dribbble inline-block"
@@ -114,7 +117,7 @@ const Header = () => {
             </div>
 
             {/* Instagram */}
-            <div className="hover:border-b-white hover:border-b-4 hover:pb-1 inline-block hover:cursor-pointer">
+            <div className="hover:border-b-yellow-400 hover:text-yellow-400  hover:border-b-4 hover:pb-1 inline-block hover:cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-brand-instagram inline-block"
@@ -135,7 +138,7 @@ const Header = () => {
             </div>
 
             {/* LinkedIn */}
-            <div className="hover:border-b-white hover:border-b-4 hover:pb-1 inline-block hover:cursor-pointer">
+            <div className="hover:border-b-yellow-400 hover:text-yellow-400 hover:border-b-4 hover:pb-1 inline-block hover:cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-brand-linkedin inline-block"
@@ -158,7 +161,14 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div></div>
+        <div className="flex justify-center items-start">
+          <StaticImage
+            src="../images/african-in-tech-nobg.png"
+            alt="Young digital creator"
+            width={500}
+            height={500}
+          />
+        </div>
       </div>
     </div>
   );

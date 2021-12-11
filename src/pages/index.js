@@ -1,12 +1,13 @@
 import * as React from "react";
 import Menu from "../components/Menu";
+import Header from "../components/Header";
 
 // markup
 const IndexPage = () => {
   return (
-    <div>
+    <div class="">
       <Menu />
-      <h1 className="text-3xl font-bold mt-4">Daniel Tossou - Portfolio V2</h1>
+      <Header />
     </div>
   );
 };

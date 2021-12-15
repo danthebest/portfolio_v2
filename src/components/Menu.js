@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 const Menu = () => {
   return (
-    <div className="flex justify-center mt-6 text-lg text-white font-light">
+    <div className="flex justify-center mt-6 text-lg text-white font-OpenSans font-light">
       <Link
         to="/"
         activeClassName="text-yellow-400 font-semibold"

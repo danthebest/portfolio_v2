@@ -7,12 +7,16 @@ const Header = () => {
       <div className="grid grid-cols-2">
         <div className="ml-56">
           <div className="bg-yellow-400 rounded-tl-full rounded-tr-full rounded-br-full py-2 w-36">
-            <p className="text-center text-black font-medium text-lg">
+            <p className="text-center text-black font-OpenSans font-medium text-lg">
               Hello, I'm
             </p>
           </div>
-          <h1 className="mt-16 text-5xl font-semibold">Daniel Tossou</h1>
-          <p className="text-xl font-medium uppercase mt-3">Product Designer</p>
+          <h1 className="mt-16 text-5xl font-Montserrat font-semibold">
+            Daniel Tossou
+          </h1>
+          <p className="text-xl font-Montserrat font-medium uppercase mt-3">
+            Product Designer
+          </p>
           {/* Location */}
           <div className="mt-6">
             <svg
@@ -31,7 +35,9 @@ const Header = () => {
               <circle cx="12" cy="11" r="3"></circle>
               <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
             </svg>
-            <p className="inline-block ml-4">Abidjan, Côte d'Ivoire</p>
+            <p className="inline-block ml-4 font-OpenSans">
+              Abidjan, Côte d'Ivoire
+            </p>
           </div>
           {/* Phone number */}
           <div className="mt-2">
@@ -50,7 +56,9 @@ const Header = () => {
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
             </svg>
-            <p className="inline-block ml-4">+225 05 94 54 12 19</p>
+            <p className="inline-block ml-4 font-OpenSans">
+              +225 05 94 54 12 19
+            </p>
           </div>
           {/* Email */}
           <div className="mt-2">
@@ -70,7 +78,9 @@ const Header = () => {
               <rect x="3" y="5" width="18" height="14" rx="2"></rect>
               <polyline points="3 7 12 13 21 7"></polyline>
             </svg>
-            <p className="inline-block ml-4">tossdaniel@gmail.com</p>
+            <p className="inline-block ml-4 font-OpenSans">
+              tossdaniel@gmail.com
+            </p>
           </div>
 
           {/* SOCIAL MEDIA SECTION */}

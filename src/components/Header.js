@@ -252,8 +252,11 @@ const Header = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center">
-          {/* TODO Create a mosaic Image on Figma with my most used tools in UX and Dev */}
+        <div className="flex justify-start">
+          <StaticImage
+            src="../images/most-used-tools.png"
+            alt="Young digital creator"
+          />
         </div>
       </div>
       {/* End Skills */}

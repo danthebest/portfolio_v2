@@ -6,6 +6,9 @@ module.exports = {
         Montserrat: ["Montserrat", "sans-serif"],
         OpenSans: ["Open Sans", "sans-serif"],
       },
+      colors: {
+        primary: "#211f26",
+      },
     },
   },
   plugins: [],

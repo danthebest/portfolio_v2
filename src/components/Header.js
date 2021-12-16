@@ -3,11 +3,12 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Header = () => {
   return (
-    <div className="mt-20 text-white">
+    <div className="mt-24 text-white">
+      {/* Begin Header */}
       <div className="grid grid-cols-2">
         <div className="ml-56">
           <div className="bg-yellow-400 rounded-tl-full rounded-tr-full rounded-br-full py-2 w-36">
-            <p className="text-center text-black font-OpenSans font-medium text-lg">
+            <p className="text-center text-primary font-OpenSans font-medium text-lg">
               Hello, I'm
             </p>
           </div>
@@ -175,11 +176,87 @@ const Header = () => {
           <StaticImage
             src="../images/african-in-tech-nobg.png"
             alt="Young digital creator"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
           />
         </div>
       </div>
+      {/* End Header */}
+
+      {/* Begin About me */}
+      <div id="about" className="grid grid-cols-2 mt-16">
+        <div className="flex justify-center">
+          <StaticImage
+            src="../images/black-freelancer.png"
+            alt="Young black developer"
+            width={444}
+            height={396}
+          />
+        </div>
+        <div className="mt-24">
+          <h1 className="text-3xl font-Montserrat font-semibold">About Me</h1>
+          <p className="text-base font-OpenSans mt-4 mb-8 w-3/4">
+            I started with web development but my passion for interface design
+            led me to focus more on front-end development and product design. I
+            am passionate about designing simple and intuitive prototypes every
+            day.
+          </p>
+          <a className="bg-yellow-400 text-primary hover:bg-white hover:cursor-pointer text-base rounded-full px-6 py-3">
+            <span className="font-OpenSans">Download CV</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-cloud-download inline-block ml-8"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M19 18a3.5 3.5 0 0 0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4"></path>
+              <line x1="12" y1="13" x2="12" y2="22"></line>
+              <polyline points="9 19 12 22 15 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+      {/* End About me */}
+
+      {/* Begin Skills */}
+      <div id="skills" className="grid grid-cols-2 mt-16">
+        <div className="">
+          <h1 className="text-3xl font-Montserrat font-semibold text-center">
+            What I can do
+          </h1>
+          <div className="text-lg text-center mt-8 font-OpenSans">
+            <p className="hover:text-yellow-400 hover:uppercase hover:cursor-pointer mb-2">
+              Visual & Interaction Design
+            </p>
+            <p className="hover:text-yellow-400 hover:uppercase hover:cursor-pointer mb-2">
+              Prototyping with Figma
+            </p>
+            <p className="hover:text-yellow-400 hover:uppercase hover:cursor-pointer mb-2">
+              Work with Trello, Asana and Git
+            </p>
+            <p className="hover:text-yellow-400 hover:uppercase hover:cursor-pointer mb-2">
+              Implementation with HTML & CSS
+            </p>
+            <p className="hover:text-yellow-400 hover:uppercase hover:cursor-pointer mb-2">
+              Developed front end with React
+            </p>
+            <p className="hover:text-yellow-400 hover:uppercase hover:cursor-pointer mb-2">
+              Front end Optimization
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-center">
+          {/* TODO Create a mosaic Image on Figma with my most used tools in UX and Dev */}
+        </div>
+      </div>
+      {/* End Skills */}
     </div>
   );
 };

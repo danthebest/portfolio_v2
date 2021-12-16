@@ -11,10 +11,10 @@ const Menu = () => {
       >
         Home
       </Link>
-      <Link to="#" className="ml-5 hover:text-yellow-400">
+      <Link to="#about" className="ml-5 hover:text-yellow-400">
         About
       </Link>
-      <Link to="#" className="ml-5 hover:text-yellow-400">
+      <Link to="#skills" className="ml-5 hover:text-yellow-400">
         Skills
       </Link>
       <Link to="#" className="ml-5 hover:text-yellow-400">

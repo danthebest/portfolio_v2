@@ -184,7 +184,7 @@ const Header = () => {
       {/* End Header */}
 
       {/* Begin About me */}
-      <div id="about" className="grid grid-cols-2 mt-16">
+      <div id="about" className="grid grid-cols-2 mt-16 scroll-m-16">
         <div className="flex justify-center">
           <StaticImage
             src="../images/black-freelancer.png"
@@ -194,7 +194,9 @@ const Header = () => {
           />
         </div>
         <div className="mt-24">
-          <h1 className="text-3xl font-Montserrat font-semibold">About Me</h1>
+          <h1 className="text-3xl font-Montserrat font-semibold">
+            **About Me**
+          </h1>
           <p className="text-base font-OpenSans mt-4 mb-8 w-3/4">
             I started with web development but my passion for interface design
             led me to focus more on front-end development and product design. I
@@ -202,7 +204,7 @@ const Header = () => {
             day.
           </p>
           <a className="bg-yellow-400 text-primary hover:bg-white hover:cursor-pointer text-base rounded-full px-6 py-3">
-            <span className="font-OpenSans">Download CV</span>
+            <span className="font-OpenSans font-medium">Download CV</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-cloud-download inline-block ml-8"
@@ -226,10 +228,10 @@ const Header = () => {
       {/* End About me */}
 
       {/* Begin Skills */}
-      <div id="skills" className="grid grid-cols-2 mt-16">
+      <div id="skills" className="grid grid-cols-2 mt-24 scroll-m-16">
         <div className="">
           <h1 className="text-3xl font-Montserrat font-semibold text-center">
-            What I can do
+            **What I can do**
           </h1>
           <div className="text-lg text-center mt-8 font-OpenSans">
             <p className="hover:text-yellow-400 hover:uppercase hover:cursor-pointer mb-2">
@@ -260,6 +262,55 @@ const Header = () => {
         </div>
       </div>
       {/* End Skills */}
+
+      {/* Begin Experience */}
+      <div id="experience" className="mt-24">
+        <h1 className="text-3xl font-Montserrat font-semibold text-center">
+          **Experiences**
+        </h1>
+        <div className="grid grid-cols-3 mt-16">
+          <div className="flex justify-end text-primary mb-20">
+            <div className="bg-white shadow-2xl shadow-white/20 px-16 py-5 text-left rounded-md hover:bg-yellow-400 hover:shadow-yellow-400/30 hover:cursor-pointer">
+              <h2 className="text-lg font-Montserrat font-semibold uppercase mt-3">
+                UI Designer Freelance
+              </h2>
+              <p className="text-base font-OpenSans font-normal">
+                Abidjan, Côte d'Ivoire
+              </p>
+              <p className="text-lg font-OpenSans font-medium mt-6">
+                Gladux Agency
+              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-center text-primary mb-20">
+            <div className="bg-white shadow-2xl shadow-white/20 px-16 py-5 text-left rounded-md hover:bg-yellow-400 hover:shadow-yellow-400/30 hover:cursor-pointer">
+              <h2 className="text-lg font-Montserrat font-semibold uppercase mt-3">
+                Front End Developer
+              </h2>
+              <p className="text-base font-OpenSans font-normal">
+                Abidjan, Côte d'Ivoire
+              </p>
+              <p className="text-lg font-OpenSans font-medium mt-6">
+                Afinov SARL
+              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-start text-primary mb-20">
+            <div className="bg-white shadow-2xl shadow-white/20 px-16 py-5 text-left rounded-md hover:bg-yellow-400 hover:shadow-yellow-400/30 hover:cursor-pointer">
+              <h2 className="text-lg font-Montserrat font-semibold uppercase mt-3">
+                Project Manager Junior
+              </h2>
+              <p className="text-base font-OpenSans font-normal">
+                Bamako, Mali
+              </p>
+              <p className="text-lg font-OpenSans font-medium mt-6">CODE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* End Experience */}
     </div>
   );
 };
